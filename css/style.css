@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap');
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+
+body {
+	/* 3. Add accessible line-height */
+	line-height: 1.5;
+	/* 4. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+ul,
+li {
+	margin: 0; /* Remove default margin */
+	padding: 0; /* Remove default padding */
+	list-style: none; /* Remove bullet points */
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+	isolation: isolate;
+}
+a {
+	/* text-decoration: none; */
+	color: inherit;
+}
+
+:root {
+	--white: #ffffff;
+	--black-pearl: #070724;
+	--dark-grey: #38384f;
+	--light-grey: #838391;
+	--mercury: #419ebb;
+	--mercury-mobile: #def4fc;
+	--venus: #eda249;
+	--venus-mobile: #f7cc7f;
+	--earth: #6d2ed5;
+	--earth-mobile: #545bfe;
+	--mars: #d14c32;
+	--mars-mobile: #ff6a45;
+	--jupiter: #d83a34;
+	--jupiter-mobile: #ecad7a;
+	--saturn: #cd5120;
+	--saturn-mobile: #fccb6b;
+	--uranus: #1ec1a2;
+	--uranus-mobile: #65f0d5;
+	--neptune: #2d68f0;
+	--neptune-mobile: #497efa;
+	--font-antonio: "Antonio", sans-serif;
+	--font-spartan: "League Spartan", sans-serif;
+}
+
+.btn {
+    display: flex;
+    gap: 1.75rem;
+    padding: .75rem 0 .6875rem 1.75rem;
+    border: .0625rem solid var(--white);
+}
+
+.btn .number,
+.btn .btn-text {
+    font-size: 0.75rem;
+    letter-spacing: 0.160625rem;
+    font-weight: 700;
+    line-height: 1.5625rem;
+}
+
+.btn .btn-number {
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.btn:hover {
+    background-color: rgba(216, 216, 216, 0.2);
+}
+
+.btn .selected {
+    background-color: red;
+}
+
+body {
+    text-transform: uppercase;
+    font-family: var(--font-spartan);
+    color: var(--white);
+    background-color: var(--black-pearl);
+    background-image: url("../assets/background-stars.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    border: .0625rem solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+
+
+
+
+
+
+
